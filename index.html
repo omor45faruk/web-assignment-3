@@ -11,11 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <style>
-        .manrope {
-            font-family: "Manrope", sans-serif;
-        }
-    </style>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/89d42297b4.js" crossorigin="anonymous"></script>
     <!-- custom color tailwind -->
@@ -24,20 +21,76 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+               " color-primary": '#da373d',
               }
             }
           }
         }
       </script>
+
+<style>
+    .manrope {
+        font-family: "Manrope", sans-serif;
+    }
+</style>
     
 </head>
 <body class="manrope">
     <!-- header-section -->
-<header>
-
+<header class="container mx-auto">
     <!-- nav section -->
-     
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 "
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="avatar placeholder">
+            <div class="bg-lime-400  w-7 h-7 mt-3 rounded-full">
+              <span class="text-lg"><i class="fa-solid fa-arrow-up rotate-45 "></i></span>
+            </div>
+        
+          <a class="btn btn-ghost text-3xl font-extrabold ">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class=" lg:flex lg:ml-14 hidden ">
+          <i class="fa-solid fa-magnifying-glass mr-6 mt-4 "></i>
+          <i class="fa-solid fa-cart-plus  mr-6 mt-4 "></i>
+          <a class="btn bg-lime-300 ">Book Consult
+            <div class="bg-black  w-7 h-7 mt-1 rounded-full">
+              <span class="text-lg text-white"><i class="fa-solid fa-arrow-up rotate-45 "></i></span>
+            </div> </a>
+        </div>
+      </div>
 </header>
 <!-- main section -->
  <main>
