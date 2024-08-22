@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisy UI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,8 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-   
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/89d42297b4.js" crossorigin="anonymous"></script>
     <!-- custom color tailwind -->
@@ -21,7 +20,7 @@
           theme: {
             extend: {
               colors: {
-               " color-primary": '#da373d',
+               " color-primary":'#da373d',
               }
             }
           }
@@ -39,39 +38,40 @@
     <!-- header-section -->
 <header class="container mx-auto">
     <!-- nav section -->
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 "
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
-          </div>
+    <div class="navbar  flex-col bg-base-100 justify-between">
+        <div class="navbar-start lg:w-auto">
+          
           <div class="avatar placeholder">
             <div class="bg-lime-400  w-7 h-7 mt-3 rounded-full">
               <span class="text-lg"><i class="fa-solid fa-arrow-up rotate-45 "></i></span>
             </div>
         
           <a class="btn btn-ghost text-3xl font-extrabold ">Rinterio</a>
+        </div>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 "
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -89,6 +89,26 @@
             <div class="bg-black  w-7 h-7 mt-1 rounded-full">
               <span class="text-lg text-white"><i class="fa-solid fa-arrow-up rotate-45 "></i></span>
             </div> </a>
+        </div>
+      </div>
+      <!-- banner-section -->
+      <div>
+        <div class="hero w-full lg:text-center ">
+          <div class="hero-content flex-col lg:flex-col">
+            <img
+              src="assets/banner.png"
+              class="max-w-sm rounded-lg " />
+            <div>
+              <h1 class="text-5xl font-extrabold ">A barn house of this design has a <br>striking appearance</h1>
+              <p class="py-6">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.
+              </p>
+              <a class="btn bg-lime-200 ">View Details
+                <div class="bg-lime-400  w-7 h-7 mt-1 rounded-full">
+                  <span class="text-lg text-black"><i class="fa-solid fa-arrow-up rotate-45 "></i></span>
+                </div> </a>
+            </div>
+          </div>
         </div>
       </div>
 </header>
