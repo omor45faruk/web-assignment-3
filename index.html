@@ -65,7 +65,7 @@
           </div>
           <ul
             tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-auto lg:w-52 p-2 shadow ">
             <li><a>Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
@@ -129,11 +129,11 @@
   <div class=" lg:flex md::flex-col ">
     
     <div class="card-body p-4 h-auto ">
-      <h2 class="card-title text-3xl font-extrabold">We design thoughtful, <br> liveable spaces</h2>
+      <h2 class="card-title text-3xl font-extrabold">We design thoughtful,  liveable spaces</h2>
       <p class="mb-5">The barn house captivates with its blend of rustic charm and <br>
         modern sophistication, featuring weathered wood, sleek metal accents.</p>
       <!-- icon card -->
-      <div class="card card-side bg-base-100 shadow-xl lg:p-4 m-0">
+      <div class="card card-side bg-base-100 shadow-xl lg:p-4 pl-1.5 m-0">
         <figure>
           <img
             src="assets/commercial.png"
@@ -177,46 +177,46 @@
 
     <!-- work process card -->
     <div class="flex gap-5 justify-center max-sm:flex-col mt-5">
-      <div class="card p-5 bg-pink-200 w-72 shadow-xl">
+      <div class="card p-5 bg-pink-200 lg:w-72 w-auto shadow-xl">
         <img class=" w-12 "
           src="assets/concept.png"
           alt="Shoes" />
       <div class="card-body">
         <h2 class="card-title font-extrabold">Concept</h2>
-        <p>The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
+        <p>The barn house captivates  with its blend of rustic charm and modern.</p>
         
       </div>
     </div>
 
-    <div class="card p-5 bg-yellow-200 w-72 shadow-xl">
+    <div class="card p-5 bg-yellow-200 lg:w-72 w-auto shadow-xl">
       <img class=" w-12 "
         src="assets/flow-chart.png"
         alt="Shoes" />
     <div class="card-body">
       <h2 class="card-title font-extrabold">Design Process</h2>
-      <p>The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
+      <p>The barn house captivates  with its blend of rustic charm and modern.</p>
       
     </div>
   </div>
 
-  <div class="card p-5 bg-green-200 w-72 shadow-xl">
+  <div class="card p-5 bg-green-200 lg:w-72 w-auto shadow-xl">
     <img class=" w-12 "
       src="assets/vision.png"
       alt="Shoes" />
   <div class="card-body">
     <h2 class="card-title font-extrabold">Supervision</h2>
-    <p>The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
+    <p>The barn house captivates with its blend of rustic charm  and modern.</p>
     
   </div>
 </div>
 
-<div class="card p-5 bg-blue-200 w-72 shadow-xl">
+<div class="card p-5 bg-blue-200 lg:w-72 w-auto shadow-xl">
   <img class=" w-12 "
     src="assets/budget-planning.png"
     alt="Shoes" />
 <div class="card-body">
   <h2 class="card-title font-extrabold">Budget Planning</h2>
-  <p>The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
+  <p>The barn house captivates  with its blend of rustic charm  and modern.</p>
   
 </div>
 </div>
@@ -237,8 +237,8 @@
     <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
 
     <!-- protfolio card secondary -->
-     <div class="flex gap-5">
-    <div class=" card card-side bg-base-100 shadow-xl w-96 grow p-7">
+     <div class="lg:flex flex-col lg:gap-5 ">
+    <div class=" card card-side bg-base-100 shadow-xl lg:w-96 lg:grow p-7 flex-col mb-3 ">
       <figure>
         <img
           src="assets/img1.png"
@@ -256,7 +256,7 @@
       </div>
     </div>
     <!-- card-2 -->
-    <div class="card bg-base-100 w-96 shadow-xl flex-none p-7">
+    <div class="card bg-base-100 lg:w-96 shadow-xl flex-none p-7 w-auto">
       <figure>
         <img
           src="assets/img2.png" />
@@ -265,8 +265,8 @@
     </div>
   </div>
     <!-- card-3 -->
-     <div class="flex gap-5">
-      <div class="card bg-base-100 w-80 shadow-xl flex-none p-7 ">
+     <div class="lg:flex flex-col gap-5">
+      <div class="card bg-base-100 lg:w-80 shadow-xl flex-none p-7 w-auto mb-3 ">
         <figure>
           <img
             src="assets/img3.png" />
@@ -274,7 +274,7 @@
         </div>
 
 <!-- card 4 -->
-  <div class=" card card-side bg-base-100 shadow-xl grow p-7">
+  <div class=" card card-side bg-base-100 shadow-xl lg:grow p-7 flex-col mb-3 ">
     <figure>
       <img
         src="assets/img4.png"
@@ -294,7 +294,7 @@
   
   <!-- card-5 -->
   
-    <div class="card bg-base-100 w-80 shadow-xl flex-none p-7">
+    <div class="card bg-base-100 w-auto lg:w-80 shadow-xl flex-none p-7  ">
       <figure>
         <img
           src="assets/img5.png" />
@@ -318,17 +318,17 @@
         <h2 class="text-3xl font-extrabold text-center">Let’s Discuss Next Project</h2>
         <p class="text-center">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
         <div class="gap-4 text-center ">
-          <input type="text" placeholder="First Name*" class="input rounded-3xl w-3/12 mx-3 my-2  " />
+          <input type="text" placeholder="First Name*" class="input rounded-3xl w-auto lg:w-3/12 mx-3 my-2  " />
 
-          <input type="text" placeholder="Last Name*" class="input rounded-3xl w-3/12 mx-3 my-2 " />
+          <input type="text" placeholder="Last Name*" class="input rounded-3xl lg:w-3/12 w-auto mx-3 my-2 " />
           <br>
-          <input type="text" placeholder="Phone Number*" class="input rounded-3xl w-3/12 mx-3 my-2 " />
-          <input type="text" placeholder="Email" class="input rounded-3xl w-3/12 mx-3 my-2 " /> <br>
-          <input type="text" placeholder="Write your message here" class="w-1/2 h-36 rounded-3xl mb-5" />
+          <input type="text" placeholder="Phone Number*" class="input rounded-3xl w-auto lg:w-3/12 mx-3 my-2 " />
+          <input type="text" placeholder="Email" class="input rounded-3xl w-auto lg:w-3/12 mx-3 my-2 " /> <br>
+          <input type="text" placeholder="Write your message here" class="lg:w-1/2 w-auto h-36 rounded-3xl mb-5 px-8" />
 
-          <div class="card-actions justify-center">
-            <button class="btn bg-lime-200 ">Send Mail <div class="avatar placeholder">
-              <div class="bg-lime-400  w-7 h-7 mt-2 rounded-full w-1/2">
+          <div class="card-actions justify-center w-auto">
+            <button class="lg:w-1/2 w-full  btn bg-lime-200 ">Send Mail <div class="avatar placeholder">
+              <div class="bg-lime-400 lg:w-7 lg:h-7 mt-2 rounded-full lg:w-1/2">
                 <span class="text-lg"><i class="fa-solid fa-arrow-up rotate-45 "></i></span>
               </div></button>
           </div>
@@ -341,7 +341,7 @@
  </main>
  <!-- footer section -->
 <footer >
-  <footer class="footer w-full footer-center bg-base-200 text-base-content rounded p-10 bg-slate-700 hidden">
+  <footer class="footer w-full footer-center bg-base-200 text-base-content rounded p-10 bg-slate-700 ">
 
     <!-- footer contain -->
     <div class="avatar placeholder flex">
@@ -352,10 +352,10 @@
     <a class="btn btn-ghost text-4xl font-extrabold text-white ">Rinterio</a>
     
   </div>
-  <div class="text-white">
-    <p >The barn house captivates <br> with its blend of rustic charm <br> and modern.</p>
+  <div class="text-white lg:w-1/2">
+    <p >The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
   </div>
-    <nav class="grid grid-flow-col gap-4 text-white">
+    <nav class="lg:grid lg:grid-flow-col lg:gap-24 lg:text-lg grid-cols-1 text-white">
       <a class="link link-hover">Home</a>
       <a class="link link-hover">Services</a>
       <a class="link link-hover">Portfolio</a>
