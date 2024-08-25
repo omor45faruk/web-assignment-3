@@ -34,12 +34,12 @@
 </style>
     
 </head>
-<body class="manrope">
+<body class="manrope overflow-x-hidden">
     <!-- header-section -->
-<header class="container mx-auto">
+<header class=" lg:container lg:mx-auto ">
     <!-- nav section -->
-    <div class="navbar text-start flex-col bg-base-100 ">
-        <div class="navbar-start lg:w-full justify-around">
+    <div class="navbar text-start flex-col bg-base-100 lg:mt-8 mt-3">
+        <div class="navbar-start w-full lg:justify-around justify-between">
           
           <div class="avatar placeholder">
             <div class="bg-lime-400  w-7 h-7 mt-3 rounded-full">
@@ -49,7 +49,7 @@
           <a class="btn btn-ghost text-4xl font-extrabold ">Rinterio</a>
         </div>
         <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5 "
@@ -92,16 +92,16 @@
         </div>
       </div>
       <!-- banner-section -->
-      <div>
-        <div class="hero w-full lg:text-center ">
-          <div class="hero-content flex-col lg:flex-col">
+      <div class="">
+        <div class="hero place-items- w-full lg:text-center ">
+          <div class="hero-content flex-col ">
             <img
               src="assets/banner.png"
-              class="max-w-sm rounded-lg " />
+              class=" lg:max-w-sm rounded-lg " />
             <div>
-              <h1 class="text-5xl font-extrabold ">A barn house of this design has a <br>striking appearance</h1>
-              <p class="py-6">
-                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.
+              <h1 class="lg:text-6xl text-xl font-extrabold ">A barn house of this design has a striking appearance</h1>
+              <p class="py-6 lg:text-lg text-sm ">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,<br> sleek metal  accents, and large windows that flood the space with natural light.
               </p>
               <a class="btn bg-lime-200 ">View Details
                 <div class="bg-lime-400  w-7 h-7 mt-1 rounded-full">
@@ -113,38 +113,38 @@
       </div>
 </header>
 <!-- main section -->
- <main class="container mx-auto">
-  <div class="bg-slate-100 pb-20 px-16">
-  <div class="container mx-auto">
+ <main class=" lg:container lg:mx-auto ">
+  <div class="bg-slate-100 pb-20 lg:px-16">
+  <div class="lg:container lg:mx-auto">
 <!-- about us section -->
  <!-- avater section -->
  
-<div class="card w-auto ">
+<div class="card lg:w-auto w-full h-auto ">
   <img class="w-24 pt-11 pb-4" src="assets/Vector.png" alt="">
 
-  <div class="card-actions pl-5 ">
+  <div class="card-actions lg:pl-5 ">
     <button class="btn bg-white"> <i class="fa-solid fa-arrow-right"></i>About us</button>
   </div>
   <!-- card-contant -->
-  <div class="flex">
+  <div class=" lg:flex md::flex-col ">
     
-    <div class="card-body  h-0">
+    <div class="card-body p-4 h-auto ">
       <h2 class="card-title text-3xl font-extrabold">We design thoughtful, <br> liveable spaces</h2>
       <p class="mb-5">The barn house captivates with its blend of rustic charm and <br>
         modern sophistication, featuring weathered wood, sleek metal accents.</p>
       <!-- icon card -->
-      <div class="card card-side bg-base-100 shadow-xl p-4 m-0">
+      <div class="card card-side bg-base-100 shadow-xl lg:p-4 m-0">
         <figure>
           <img
             src="assets/commercial.png"
             alt="Movie" />
         </figure>
-        <div class="card-body w-1/2">
+        <div class="card-body lg:w-1/2">
           <h2 class="card-title font-extrabold">Commercial</h2>
           <p>The barn house captivates with its blend <br>of rustic charm and modern.</p>
         </div>
       </div>
-      <div class="card card-side bg-base-100 shadow-xl p-4 m-0">
+      <div class="card card-side bg-base-100 shadow-xl lg:p-4 m-0">
         <figure>
           <img
             src="./assets/residential.png"
@@ -157,7 +157,7 @@
       </div>
       
     </div>
-    <figure class="w-1/2">
+    <figure class=" lg:w-1/2 p-4">
       <img
         src="assets/Rectangle.png"
         alt="Shoes" />
@@ -340,8 +340,8 @@
       </div>
  </main>
  <!-- footer section -->
-<footer>
-  <footer class="footer w-full footer-center bg-base-200 text-base-content rounded p-10 bg-slate-700">
+<footer >
+  <footer class="footer w-full footer-center bg-base-200 text-base-content rounded p-10 bg-slate-700 hidden">
 
     <!-- footer contain -->
     <div class="avatar placeholder flex">
